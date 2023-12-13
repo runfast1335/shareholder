@@ -35,7 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DateTimeSelector">
+      <HintPath>C:\Users\hosain\Downloads\DateTimeSelector-v1.1.2-bin\DateTimeSelector.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Charts, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar.Layout, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
+    <Reference Include="DevComponents.DotNetBar.Schedule, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar.SuperGrid, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.37, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="DevComponents.Instrumentation, Version=14.1.0.37, Culture=neutral, PublicKeyToken=f90dc37c26666a67" />
@@ -45,6 +50,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,11 +63,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form_home.cs">
+    <Compile Include="form_home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_home.Designer.cs">
-      <DependentUpon>Form_home.cs</DependentUpon>
+    <Compile Include="form_home.Designer.cs">
+      <DependentUpon>form_home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_chart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_chart.Designer.cs">
+      <DependentUpon>Form_chart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_rowchange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_rowchange.Designer.cs">
+      <DependentUpon>Form_rowchange.cs</DependentUpon>
     </Compile>
     <Compile Include="form_login.cs">
       <SubType>Form</SubType>
@@ -68,13 +87,40 @@
     <Compile Include="form_login.Designer.cs">
       <DependentUpon>form_login.cs</DependentUpon>
     </Compile>
+    <Compile Include="form_register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_register.Designer.cs">
+      <DependentUpon>form_register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_setting.Designer.cs">
+      <DependentUpon>form_setting.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form_home.resx">
-      <DependentUpon>Form_home.cs</DependentUpon>
+    <EmbeddedResource Include="form_home.fa-IR.resx">
+      <DependentUpon>form_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_home.resx">
+      <DependentUpon>form_home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_chart.resx">
+      <DependentUpon>Form_chart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_rowchange.resx">
+      <DependentUpon>Form_rowchange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form_login.resx">
       <DependentUpon>form_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_register.resx">
+      <DependentUpon>form_register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_setting.resx">
+      <DependentUpon>form_setting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

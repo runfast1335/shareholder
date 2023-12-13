@@ -40,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="bll.cs" />
+    <Compile Include="bl_human.cs" />
+    <Compile Include="bl_stock_buy.cs" />
+    <Compile Include="bl_stock_sell.cs" />
+    <Compile Include="bl_user.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

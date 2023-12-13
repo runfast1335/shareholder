@@ -13,8 +13,8 @@ namespace BusinesEntity
         public string password { get; set; }
         public bool gender { get; set; }
         public byte age { get; set; }
-        public int kodemelli { get; set; }
-        public int mobile { get; set; }
+        public string kodemelli { get; set; }
+        public string mobile { get; set; }
         public string email { get; set; }
 
     }

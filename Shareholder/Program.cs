@@ -16,7 +16,7 @@ namespace Shareholder
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_home());
+            Application.Run(new form_login());
         }
     }
 }

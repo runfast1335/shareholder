@@ -42,7 +42,8 @@
   <ItemGroup>
     <Compile Include="human.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="stock.cs" />
+    <Compile Include="stock_buy.cs" />
+    <Compile Include="stock_sell.cs" />
     <Compile Include="user.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

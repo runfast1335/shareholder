@@ -12,5 +12,9 @@ namespace BusinesEntity
         public int id { get; set; }
         public string name { get; set; }
         public string family { get; set; }
+        public string fullname { get { return name +" " +family; } set { } }
+        public int user_id { get; set; }
+
+
     }
 }
