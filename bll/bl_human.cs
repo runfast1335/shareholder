@@ -34,5 +34,9 @@ namespace bll
         {
             dl_human1.delete(id);
         }
+        public void deleteTest(int id)
+        {
+            dl_human1.delete(id);
+        }
     }
 }
